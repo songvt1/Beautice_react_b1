@@ -1,5 +1,5 @@
 import GoTOp from "../../assets/img/ToTopButton.png";
-import "./GoToTop.css";
+import "./goToTop.css";
 
 function GoToTop() {
   const handleGoToTOp = () => {
