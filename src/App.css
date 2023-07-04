@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+:root {
+  --pink-color: #ff64ae;
+  --gray-color: #8b8b8b;
+  --blue-color: #091156;
+  --white-color: #ffffff;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  background-image: url(./assets/img/SlideBackground.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.container .content-page {
+  margin: 0 150px;
+}
+
+.container .background2 {
+  background-image: url(./assets/img/BackgroundBubble.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  margin-top: -220px;
+}
+
+.container .background3 {
+  background-image: url(./assets/img/BackgroundContact.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: -80px;
+}
+
+.container .background4 {
+  background-image: url(./assets/img/FooterBG.png),
+    url(./assets/img/BottomBG.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, left bottom;
+  margin-top: 69px;
+  height: 705px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .container,
+  .container .background2,
+  .container .background3 {
+    background-size: contain;
+  }
+
+  .container .content-page {
+    margin: 0 40px;
+  }
+}

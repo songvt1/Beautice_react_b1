@@ -1,0 +1,50 @@
+.core-service .service-content {
+  padding: 132px 0 0 0;
+}
+
+.core-service .service-content .main-service {
+  font-weight: 600;
+  text-align: center;
+  word-wrap: break-word;
+  letter-spacing: 0.4px;
+  color: var(--pink-color);
+}
+
+.core-service .service-content .learn {
+  max-width: 450px;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 48px;
+  color: var(--blue-color);
+
+  font-size: 36px;
+  margin: 10px auto 0;
+}
+.core-service .service-content .content {
+  max-width: 848px;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--gray-color);
+
+  margin: 10px auto 0;
+}
+
+.core-service .service-banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 87px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .core-service .service-banner {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}

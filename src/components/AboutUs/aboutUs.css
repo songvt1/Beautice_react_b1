@@ -1,0 +1,139 @@
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 338px;
+}
+
+.about-us-container .content .about-us {
+  max-width: 90px;
+  width: 100%;
+  font-weight: 600;
+  color: var(--pink-color);
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.about-us-container .content .title {
+  max-width: 664px;
+  width: 100%;
+  font-weight: 600;
+  color: var(--blue-color);
+  text-align: center;
+  display: flex;
+  word-wrap: break-word;
+  flex-direction: column;
+  flex-shrink: 0;
+  font-size: 36px;
+  line-height: 125%;
+  margin-top: -2px;
+}
+
+.about-us-container .content .description {
+  max-width: 483px;
+  font-weight: 400;
+  color: var(--gray-color);
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #8b8b8b;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  margin-top: 7px;
+}
+
+.about-us-container .content .description p:nth-child(2) {
+  margin-top: 7px;
+}
+
+.about-us-container .content .btn {
+  margin-top: 34px;
+  display: flex;
+}
+.about-us-container .content .btn .btn-learn {
+  width: 200px;
+  height: 59px;
+  margin-right: 40px;
+  border-radius: 50px;
+  background: #ff64ae;
+  box-shadow: 0px 17px 22px 0px #ffedf6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+
+.about-us-container .content .btn .btn-play {
+  margin: 5px 0 0 5px;
+  width: 213px;
+  height: 49px;
+  border-radius: 50px;
+
+  font-weight: 600;
+  color: var(--gray-color);
+  letter-spacing: 1.8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.content .btn .btn-play img {
+  margin-right: 13px;
+}
+
+.about-us-container .image {
+  width: 476px;
+  height: 350px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  box-shadow: 0px 0px 50px 25px #fff;
+  margin-top: 61px;
+
+  background-image: url(../../assets/img/unsplash_LRXYS0tSyGc.png);
+  background-position: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .about-us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-container .content .description {
+    max-width: 848px;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .about-us-container .content .btn {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-us-container .content .btn .btn-learn {
+    margin-right: 0;
+  }
+
+  .about-us-container .image {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+  }
+}

@@ -1,0 +1,117 @@
+.main-slide .slide {
+  width: 100%;
+  display: flex;
+  margin-top: 199px;
+}
+
+.main-slide .slide .content {
+  margin-left: 38px;
+}
+
+.main-slide .slide .content .title {
+  max-width: 430px;
+  width: 100%;
+  line-height: 125%;
+  font-size: 48px;
+  letter-spacing: 0.9px;
+  font-weight: 600;
+  color: var(--blue-color);
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.main-slide .slide .content .description {
+  max-width: 474px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  color: var(--blue-color);
+  margin: 7px 0 0 0;
+}
+
+.main-slide .slide .content .btn-more {
+  width: 200px;
+  height: 58.361px;
+  border-radius: 50px;
+  background: var(--pink-color);
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+
+  margin-top: 30px;
+}
+
+.main-slide .slide .image img {
+  width: 601.5px;
+  height: 397.5px;
+  margin: -57px 0 0 23px;
+}
+
+.change-slide {
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.change-slide .btn-slide {
+  width: 20px;
+  height: 2.146px;
+  flex-shrink: 0;
+
+  cursor: pointer;
+  border: none;
+  background: #eeeeee;
+  margin-top: 3px;
+}
+
+.change-slide .btn-slide-active {
+  width: 26px;
+  height: 8.146px;
+  flex-shrink: 0;
+
+  cursor: pointer;
+  border: none;
+  background: #414880;
+  border-radius: 50px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+
+  margin: 0 6px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .main-slide .slide {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .main-slide .slide .image img {
+    width: 95%;
+    height: 95%;
+    margin: 30px 0 0 0;
+  }
+
+  .main-slide .slide .content .title,
+  .main-slide .slide .content .description {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .main-slide .slide .content .title {
+    font-size: 36px;
+  }
+
+  .main-slide .slide .content .description {
+    font-size: 14px;
+  }
+}
